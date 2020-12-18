@@ -26,7 +26,7 @@ app.get('/holders/:id', function (req, res) {
     
         console.log(title.text());
 
-        res.json(holder.text().substring(1));
+        res.json(holder.text().substring(1).replace(/ addresses.*$/i, ""));
     });
 })
 
