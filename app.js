@@ -23,6 +23,8 @@ app.get('/holders/:id', function (req, res) {
         let title = $('title');
 
         let holder = $('#ContentPlaceHolder1_tr_tokenHolders .col-md-8');
+        
+        // change above line with this code -> a = parseInt(document.getElementsByClassName('hash-tag text-truncate')[0].getAttribute('data-original-title').toString().split(', ').join(''))
     
         console.log(title.text());
 
